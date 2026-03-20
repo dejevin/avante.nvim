@@ -17,7 +17,7 @@ function M.show(input)
   -- Add concealing support if needed
   if input.conceal then opts.password = true end
 
-  snacks_input(opts, input.on_submit)
+  snacks_input(opts, opts, input.on_submit)
 end
 
 return M
